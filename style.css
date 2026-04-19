@@ -181,6 +181,53 @@ a:hover {
     padding-left: 18px;
 }
 
+.start-here-panel {
+    background: #f5f7fb;
+    border: 1px solid #e3e8f3;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 24px;
+}
+
+.start-here-panel h3 {
+    font-size: 1.1rem;
+    margin-bottom: 14px;
+    color: #222;
+}
+
+.start-here-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+}
+
+.start-here-card {
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.start-here-card strong {
+    display: block;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.start-here-card p {
+    margin: 0;
+    color: #555;
+}
+
+.editor-note {
+    margin-top: 6px;
+    padding: 12px 14px;
+    background: #fffaf0;
+    border-left: 4px solid #f0b429;
+    border-radius: 6px;
+    font-size: 0.96rem;
+}
+
 /* Offer Articles */
 .offer-article,
 .info-card {
@@ -396,7 +443,8 @@ a:hover {
     }
 
     .hero-grid,
-    .intro-panel {
+    .intro-panel,
+    .start-here-grid {
         grid-template-columns: 1fr;
     }
 
