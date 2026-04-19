@@ -116,6 +116,31 @@ a:hover {
     color: #334;
 }
 
+.hero-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 22px;
+}
+
+.hero-card {
+    background: #fafafa;
+    border: 1px solid #ececec;
+    border-radius: 8px;
+    padding: 18px;
+}
+
+.hero-card h3 {
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.hero-card p {
+    color: #555;
+    margin: 0;
+}
+
 /* Featured Section */
 .featured-section, .latest-section {
     margin-bottom: 40px;
@@ -125,6 +150,35 @@ a:hover {
     color: #666;
     margin-bottom: 20px;
     font-size: 1.05rem;
+}
+
+.intro-panel {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 18px;
+    margin-bottom: 24px;
+}
+
+.intro-block {
+    background: #f8f8f8;
+    border: 1px solid #ececec;
+    border-radius: 8px;
+    padding: 18px;
+}
+
+.intro-block h3 {
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.intro-block p,
+.intro-block li {
+    color: #555;
+}
+
+.intro-block ul {
+    padding-left: 18px;
 }
 
 /* Offer Articles */
@@ -339,6 +393,11 @@ a:hover {
 
     .hero h1 {
         font-size: 1.8rem;
+    }
+
+    .hero-grid,
+    .intro-panel {
+        grid-template-columns: 1fr;
     }
 
     .offer-badge {
