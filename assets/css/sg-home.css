@@ -1,5 +1,89 @@
 /* Homepage-specific adaptation of HTML5 UP Editorial for Singapore Referrals. */
 
+.sg-referrals-home .sg-quick-update {
+    margin-top: 0;
+}
+
+.sg-referrals-home .sg-tight-features article {
+    padding-top: 0.25em;
+}
+
+.sg-referrals-home .sg-decision-grid {
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: 2.25em;
+}
+
+.sg-referrals-home .sg-decision-card,
+.sg-referrals-home .sg-judgment-box,
+.sg-referrals-home .sg-method-box {
+    background: #faf8f4;
+    border: solid 1px rgba(210, 215, 217, 0.9);
+    border-radius: 0.375em;
+}
+
+.sg-referrals-home .sg-decision-card {
+    padding: 1.35em 1.4em;
+}
+
+.sg-referrals-home .sg-decision-card h3,
+.sg-referrals-home .sg-method-box h3 {
+    margin-bottom: 0.55em;
+}
+
+.sg-referrals-home .sg-decision-card p,
+.sg-referrals-home .sg-judgment-box span,
+.sg-referrals-home .sg-method-box li {
+    color: #5b646b;
+}
+
+.sg-referrals-home .sg-decision-card-warn {
+    background: #fff7f3;
+    border-color: rgba(245, 106, 106, 0.35);
+}
+
+.sg-referrals-home .sg-judgment-grid {
+    display: grid;
+    gap: 0.9em;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin: 0 0 1.25em 0;
+}
+
+.sg-referrals-home .sg-judgment-box {
+    min-height: 100%;
+    padding: 0.95em 1em;
+}
+
+.sg-referrals-home .sg-judgment-box strong {
+    color: #3d4449;
+    display: block;
+    font-size: 0.8em;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.45em;
+    text-transform: uppercase;
+}
+
+.sg-referrals-home .sg-judgment-box span {
+    display: block;
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+.sg-referrals-home .sg-method-box {
+    margin-top: 2em;
+    padding: 1.4em 1.5em;
+}
+
+.sg-referrals-home .sg-method-box ul {
+    margin: 0;
+    padding-left: 1.1em;
+}
+
+.sg-referrals-home .sg-method-box li + li {
+    margin-top: 0.45em;
+}
+
 .sg-referrals-home #header .logo {
     letter-spacing: 0.03em;
 }
@@ -189,6 +273,11 @@
     .sg-referrals-home .sg-hero-panel {
         min-height: 18em;
         padding: 2em;
+    }
+
+    .sg-referrals-home .sg-decision-grid,
+    .sg-referrals-home .sg-judgment-grid {
+        grid-template-columns: 1fr;
     }
 }
 
